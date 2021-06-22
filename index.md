@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages (test)
+## Workshop CSS
 
 You can use the [editor on GitHub](https://github.com/q-func/workshopCSS21-brain-connectivity/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
