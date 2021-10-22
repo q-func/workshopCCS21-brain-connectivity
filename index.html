@@ -78,21 +78,19 @@
 	  <img src="images/speaker1.png" alt="Speaker" style="width:45%" class="w3-circle w3-hover-opacity">
 	   <h3>Danielle S. Bassett</h3>
 	   <h5 style="color:gray;">University of Pennsylvania, USA</h5>
-	  <p>TBA</p>
 	</div>
 		
 	<div class="w3-third">
 	  <img src="images/Fabrizio_DVF_image.jpg" alt="Speaker" style="width:45%" class="w3-circle w3-hover-opacity">
 	  <h3>Fabrizio de Vico Fallani</h3>
 	  <h5 style="color:gray">Inria, Paris Brain Institute (ICM), France</h5>
-	  <p>TBA</p>
 	</div>
 
 	<div class="w3-third">
 	  <img src="images/speaker1.png" alt="Speaker" style="width:45%" class="w3-circle w3-hover-opacity">
 	   <h3>Nicole Lazar</h3>
 	   <h5 style="color:gray;">Pennsylvania State University, USA</h5>
-	  <p>TBA</p>
+	</div>
 	</div>
 	</div>
 
@@ -101,14 +99,12 @@
 	  <img src="images/sarah_photo.jpg" alt="Speaker" style="width:30%" class="w3-circle w3-hover-opacity">
 	  <h3>Sarah Morgan</h3>
 	  <h5 style="color:gray">University of Cambridge, UK</h5>
-	  <p>TBA</p>
 	</div>
 
 	<div class="w3-half">
-	  <img src="images/speaker1.png" alt="Speaker" style="width:30%"  class="w3-circle w3-hover-opacity">
+	  <img src="images/PHOTO_VanDeVille6_3_square.jpeg" alt="Speaker" style="width:30%"  class="w3-circle w3-hover-opacity">
 	  <h3>Dimitri Van de Ville</h3>
 	  <h5 style="color:gray">EPFL, Switzerland</h5>
-	  <p>TBA</p>
 	</div>
 
 	</div>
@@ -138,21 +134,22 @@
 	All times are CEST.
 	<h2>Morning</h2>
 	<p> <b> 9:00am-9:05am: welcome </b> <br>
-		9:05am-9:55am: Dimitri Van De Ville <br>
-		9:55am-10:40am: Fabrizio de Vico Fallani <br>
-		10:40am-10:50am: joint Q&A session <br>
+		<b>9:05am-9:55am:</b> invited speaker - <a href="#VDV">Graph signal processing to quantify brain structure-function coupling</a> - <i>Dimitri Van De Ville</i> <br>
+		<b>9:55am-10:40am:</b> invited speaker - <a href="#DVF">Statistical models of dynamic brain networks</a> - <i>Fabrizio de Vico Fallani</i> <br> 
+		<b>10:40am-10:50am:</b> joint Q&A session <br>
 		<b> 10:50am-11:15am: coffee break </b> <br>
-		11:15am-12:15pm: Sarah Morgan <br>
-		12:15pm-12:35pm: Céline Meillier <br>
-		12:35pm-1:00pm: discussion <br>
+		<b>11:15am-12:15pm:</b> invited speaker <a href="#SM">What can brain MRI tell us about schizophrenia?</a> - <i>Sarah Morgan</i> <br>
+		<b>12:15pm-12:35pm:</b> <a href="#CM">Towards a new framework for spatio-temporal modeling of brain functional connectivity dynamics at the individual level</a> <i>Céline Meillier</i> <br>
+		<b>12:35pm-1:00pm:</b> discussion <br>
 		<b> 1:00pm-2:30pm: lunch break </b>
 	</p>
 	<h2>Afternoon</h2>
-	<p>2:30pm-3:30pm: Danielle S. Bassett <br>
-		3:30pm-3:50pm: Hanâ Lbath <br>
-		3:50pm-4:15pm: Chao Zhang <br>
+	<p><b>2:30pm-3:30pm:</b> invited speaker - <a href="#DB">TBA</a> - <i>Danielle S. Bassett</i> <br>
+		<b>3:30pm-3:50pm:</b> <a href="#HL">Hanâ Lbath</a> <br>
+		<b>3:50pm-4:15pm:</b> <a href="#CZ">Chao Zhang</a> <br>
 		<b>4:15pm-4:45pm: coffee break </b> <br>
-		4:45pm-5:45pm: Nicole Lazar
+		<b>4:45pm-5:45pm:</b> invited speaker <a href="#NL">TBA</a> <i>Nicole Lazar</i>
+
 	</p>
 		
 	</div>
@@ -188,34 +185,33 @@
 
 <div class="w3-panel w3-grey w3-center">
   <h2 class="w3-xxlarge">Abstracts</h2>
-  <p><b>Invited Talks</b></p>
+  <h3><b>Invited Talks</b></h3>
 </div>
 
-<h3>Graph signal processing to quantify brain structure-function coupling</h3>
+<h3 id="VDV">Graph signal processing to quantify brain structure-function coupling</h3>
 <p><b>Dimitri Van De Ville</b></p>
 <p align="left">State-of-the-art magnetic resonance imaging (MRI) provides unprecedented opportunities to study brain structure (anatomy) and function (physiology). Based on such data, graph representations can be built where nodes are associated to brain regions and edge weights to strengths of structural or functional connections. In particular, structural graphs capture major neural pathways in white matter, while functional graphs map out statistical interdependencies between pairs of regional activity traces. Network analysis of these graphs has revealed emergent system-level properties of brain structure or function, such as efficiency of communication and modular organization.</p>
 <p align="left">In this talk, graph signal processing (GSP) will be presented as a novel framework to integrate brain structure, contained in the structural graph, with brain function, characterized by activity traces that can be considered as time-dependent graph signals. Such a perspective allows to define novel meaningful graph-filtering operations of brain activity that take into account smoothness of signals on the anatomical backbone. This allows to define a new measure of “coupling” between structure and function, termed the structural decoupling index (SDI), based on how activity is expressed on structural graph harmonics of different graph frequencies. To provide statistical inference, we extend the well-known Fourier phase randomization method to generate surrogate data to the graph setting. The SDI reveals a behaviorally relevant spatial gradient, where sensory regions tend to be more coupled with structure, and high-level cognitive ones less so. In addition, SDI maps are informative both for task decoding and individual fingerprinting pointing again toward the different involvement of unimodal and transmodal regions, respectively. Finally, recent work will highlight how the spatial resolution of GSP brain graphs can be increased to the voxel level, representing a few hundredth thousands of nodes.</p>
 
-<h3>Statistical models of dynamic brain networks</h3>
+<h3 id="DVF">Statistical models of dynamic brain networks</h3>
 <p><b>Fabrizio de Vico Fallani </b></p>
 <p align="left">Complex brain networks are often derived from experimental data. This leads to the presence of spurious connections that might in turn affect the topological properties of the network. The research of tools that take into account the presence of spurious connectivity is therefore paramount to improve the interpretability of the results.</p>
 <p align="left">Here, I present some of the recent findings we obtained by developing a statistical framework based on exponential random graph models. I specifically focus on applications aiming to identify the basic building blocks of brain networks (Obando et al, J R Soc Interface, 2017) as well as the temporal connection signatures of recovery after stroke (Obando et al, arXiv:1907.10009). Collectively, these works present new tools to statistically model complex brain networks with important implications in both basic and clinical neuroscience.</p>
 
-<h3>What can brain MRI tell us about schizophrenia?</h3>
+<h3 id="SM">What can brain MRI tell us about schizophrenia?</h3>
 <p><b>Sarah Morgan </b></p>
 <p align="left">Schizophrenia is an extremely debilitating mental health condition, which is often described as a disorder of brain dysconnectivity. However, it is unclear from the literature which brain connectivity patterns are most closely related to schizophrenia, and how replicable these signals are across different scanners, data collection sites and patient groups. In this talk, I will discuss work addressing these challenges, using data from the Psyscan project (http://psyscan.eu/). In the first part of the talk, I will show how we used morphometric similarity mapping to identify replicable structural brain differences in schizophrenia, which were associated with brain expression of schizophrenia related genes (Morgan et al, PNAS 2019). In the second part, I will examine the extent to which MRI data could be used to distinguish patients with schizophrenia from healthy volunteers. We found that resting state fMRI connectivity could do this with high accuracy, based on a pattern of cortical features that replicated across three independent sites and was associated with neurodevelopment (Morgan*, Young* et al, BP:CNNI 2020). Overall, we begin to see an emerging picture of which brain MRI signals are most closely related to schizophrenia, and how together they can give us a more integrative understanding of the condition. </p>
 
 
-
-<h3>Reproducibility in functional neuroimaging studies and brain networks through the lens of multiplicity</h3>
+<h3 id="NL">Reproducibility in functional neuroimaging studies and brain networks through the lens of multiplicity</h3>
 <p><b>Nicole A. Lazar</b></p>
 <p align="left">Of late much attention has been focused on problems of reproducibility in the scientific literature, with many published studies failing to meet what seems a minimal standard.  Functional neuroimaging research has not been immune to these criticisms. As a reaction to the "reproduciblity crisis" in science, a variety of solutions have been proposed, most of which touch on, in one way or another, issues of multiple testing and Type I error control.  In this talk, I will discuss the question of reproducibility in functional neuroimaging and other large-scale data settings, via the perspective ofmultiplicity.  I will also discuss implications for brain network studies, and possible alternative approaches that may show better performance.</p>
 
 <div class="w3-panel w3-grey w3-center">
-  <p><b>Short Talks</b></p>
+  <h3><b>Short Talks</b></h3>
 </div>
 
-<h3>Towards a new framework for spatio-temporal modeling of brain functional connectivity dynamics at the individual level </h3>
+<h3 id="CM">Towards a new framework for spatio-temporal modeling of brain functional connectivity dynamics at the individual level </h3>
 <p><b>C&eacuteline Meillier</b></p>
 <p align="left">While the assumption of stationarity of resting state functional connectivity is challenged by the sliding window analysis of temporal signals from resting fMRI, the dynamics of connectivity remains essentially temporal. It should also be noted that most of the dynamics analyses are performed in group studies. In our work, we are interested in the spatio-temporal modelling of the dynamics of resting state functional connectivity at the individual level. We have identified several characteristic time scales in the temporal dynamics of connectivity and found that these scales are not necessarily identical across individuals within the same group. Contrary to classical approaches, connectivity is not studied at the spatial scale of functional networks estimated by ICA, but using a very fine anatomical segmentation and we used the hypothesis that a functional network at a given time can be defined as a set of small anatomical regions. The notion of functional connectivity units is introduced, which allows the combination of several of them to form functional networks at different times. These functional connectivity units constitute a dictionary on which we decompose the list of connectivity matrices calculated over a sliding window from the signals of the anatomical regions resulting from the segmentation. The estimation of the activations of the different functional connectivity units during the examination gives a spatio-temporal representation of the functional connectivity dynamics. The comparison of these results with the state change signal obtained with the classical method shows some coherence at some transitions between states but also shows the greater spatio-temporal complexity of the functional connectivity dynamics and the need to take it into account.</p>
 </div>
