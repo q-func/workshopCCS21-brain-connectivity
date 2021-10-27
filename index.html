@@ -144,9 +144,9 @@
 		<b> 1:00pm-2:30pm: lunch break </b>
 	</p>
 	<h2>Afternoon</h2>
-	<p><b>2:30pm-3:30pm:</b> invited speaker - <a href="#DB">TBA</a> - <i>Danielle S. Bassett</i> <br>
-		<b>3:30pm-3:50pm:</b> <a href="#HL">Hanâ Lbath</a> <br>
-		<b>3:50pm-4:15pm:</b> <a href="#CZ">Chao Zhang</a> <br>
+	<p><b>2:30pm-3:30pm:</b> invited speaker - <a href="#DB">Utility of multimodal neuroImaging in evaluating network models</a> - <i>Danielle S. Bassett</i> <br>
+		<b>3:30pm-3:50pm:</b> <a href="#HL">Brain functional connectivity estimation</a> - <i>Hanâ Lbath</i> <br>
+		<b>3:50pm-4:15pm:</b> <a href="#CZ">Modeling inter-regional correlation for brain connectivity quantification with noisy voxel-level data</a> - <i>Chao Zhang</i><br>
 		<b>4:15pm-4:45pm: coffee break </b> <br>
 		<b>4:45pm-5:45pm:</b> invited speaker - <a href="#NL">Reproducibility in functional neuroimaging studies and brain networks through the lens of multiplicity</a> - <i>Nicole A. Lazar</i>
 
@@ -202,6 +202,10 @@
 <p><b>Sarah Morgan </b></p>
 <p align="left">Schizophrenia is an extremely debilitating mental health condition, which is often described as a disorder of brain dysconnectivity. However, it is unclear from the literature which brain connectivity patterns are most closely related to schizophrenia, and how replicable these signals are across different scanners, data collection sites and patient groups. In this talk, I will discuss work addressing these challenges, using data from the Psyscan project (http://psyscan.eu/). In the first part of the talk, I will show how we used morphometric similarity mapping to identify replicable structural brain differences in schizophrenia, which were associated with brain expression of schizophrenia related genes (Morgan et al, PNAS 2019). In the second part, I will examine the extent to which MRI data could be used to distinguish patients with schizophrenia from healthy volunteers. We found that resting state fMRI connectivity could do this with high accuracy, based on a pattern of cortical features that replicated across three independent sites and was associated with neurodevelopment (Morgan*, Young* et al, BP:CNNI 2020). Overall, we begin to see an emerging picture of which brain MRI signals are most closely related to schizophrenia, and how together they can give us a more integrative understanding of the condition. </p>
 
+<h3 id="DB">Utility of multimodal neuroImaging in evaluating network models </h3>
+<p><b>Danielle S. Bassett</b></p>
+<p align="left"></p>
+
 
 <h3 id="NL">Reproducibility in functional neuroimaging studies and brain networks through the lens of multiplicity</h3>
 <p><b>Nicole A. Lazar</b></p>
@@ -215,11 +219,11 @@
 <p><b>C&eacuteline Meillier</b></p>
 <p align="left">While the assumption of stationarity of resting state functional connectivity is challenged by the sliding window analysis of temporal signals from resting fMRI, the dynamics of connectivity remains essentially temporal. It should also be noted that most of the dynamics analyses are performed in group studies. In our work, we are interested in the spatio-temporal modelling of the dynamics of resting state functional connectivity at the individual level. We have identified several characteristic time scales in the temporal dynamics of connectivity and found that these scales are not necessarily identical across individuals within the same group. Contrary to classical approaches, connectivity is not studied at the spatial scale of functional networks estimated by ICA, but using a very fine anatomical segmentation and we used the hypothesis that a functional network at a given time can be defined as a set of small anatomical regions. The notion of functional connectivity units is introduced, which allows the combination of several of them to form functional networks at different times. These functional connectivity units constitute a dictionary on which we decompose the list of connectivity matrices calculated over a sliding window from the signals of the anatomical regions resulting from the segmentation. The estimation of the activations of the different functional connectivity units during the examination gives a spatio-temporal representation of the functional connectivity dynamics. The comparison of these results with the state change signal obtained with the classical method shows some coherence at some transitions between states but also shows the greater spatio-temporal complexity of the functional connectivity dynamics and the need to take it into account.</p>
 
-<h3>Brain functional connectivity estimation </h3>
+<h3 id="HL">Brain functional connectivity estimation </h3>
 <p><b>Han&acirc Lbath</b></p>
 <p align="left"> Resting state functional brain connectivity networks of single subjects, which connect together correlated brain regions, are usually constructed from functional Magnetic Resonance Imaging (fMRI) data by aggregating variables within predefined brain regions. However, such approaches suffer from loss of relevant information and can lead to incorrect edge identification. We first establish these issues notably stem from the presence of within-region correlations. To alleviate them, and leveraging correlation screening literature, simple and practical characterizations of the mean number of correlation discoveries that flexibly incorporate within-group dependence structures are provided. This novel approach for handling arbitrary within-group correlation is then shown to improve false positive and true positive rates. A novel connectivity network inference framework is then presented. First, inter-regional correlation distribution are estimated. Then, correlation thresholds are constructed for each edge, with false discovery control that can be tailored to one's application. Finally, the proposed framework is implemented on a real-world dataset.</p>
 
-<h3>Modeling inter-regional correlation for brain connectivity quantification with noisy voxel-level data</h3>
+<h3 id="CZ">Modeling inter-regional correlation for brain connectivity quantification with noisy voxel-level data</h3>
 <p><b>Chao Zhang</b></p>
 <p align="left">Resting state brain functional connectivity quantifies the similarity between brain regions, each of which consists of voxels at which dynamic signals are acquired via neuroimaging techniques, such as BOLD signals in functional magnetic resonance imaging (fMRI).  Pearson correlation and similar metrics have been adopted to estimate inter-regional connectivity, often through averaging of signals within regions.  However, dependencies between signals within each region and the presence of noise contaminate such inter-regional correlation estimates.  We propose a mixed-effects model with a novel covariance structure that explicitly isolates the different sources of variability in the observed BOLD signals, including correlated regional signals, local spatiotemporal noise, and measurement error.  Methods for tackling the computational challenges associated with restricted maximum likelihood estimation will be discussed. Simulation results demonstrate that the parameters of the proposed model can be accurately estimated.  The model was also implemented on data collected from an anesthetized live rat.</p>
 </div>
